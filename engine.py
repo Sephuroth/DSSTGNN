@@ -28,7 +28,7 @@ class trainer:
         self.model = DSSTGNN(device, batch_size, input_dim, channels, num_nodes, input_len, output_len, dropout)
         self.model.to(device)
         self.optimizer = Ranger(self.model.parameters(), lr=lrate, weight_decay=wdecay)
-        self.loss = util.MAE_torch
+        self.loss = util.MAE_torch   # MAE_Freq_torch
         self.scaler = scaler
         self.clip = 5
         print(self.model)
@@ -59,4 +59,5 @@ class trainer:
         mape = util.MAPE_torch(predict, real, 0.0).item()
         rmse = util.RMSE_torch(predict, real, 0.0).item()
         wmape = util.WMAPE_torch(predict, real, 0.0).item()
+
         return loss.item(), mape, rmse, wmape, A_graph.detach(), D_graph.detach()
