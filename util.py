@@ -72,7 +72,7 @@ def load_dataset(dataset_dir, batch_size, valid_batch_size=None, test_batch_size
     for category in ["train", "val", "test"]:
         data["x_" + category][..., 0] = scaler.transform(data["x_" + category][..., 0])
 
-    # 对顺序出现的数据全局随机打乱
+
     print("Perform shuffle on the dataset")
     random_train = torch.arange(int(data["x_train"].shape[0]))
     random_train = torch.randperm(random_train.size(0))
@@ -102,8 +102,8 @@ def MAE_torch(pred, true, mask_value=None):
     else:
         return torch.mean(torch.abs(true - pred))
 
-# Insprised by FreDF, 改成在频域损失
-def MAE_Feq_torch(pred, true, mask_value=None):
+
+def MAE_Freq_torch(pred, true, mask_value=None):
     if mask_value != None:
         mask = torch.gt(true, mask_value)
         pred = torch.masked_select(pred, mask)
@@ -112,7 +112,7 @@ def MAE_Feq_torch(pred, true, mask_value=None):
     else:
         return torch.mean(torch.abs(torch.fft.rfft(pred, dim=-1) - torch.fft.rfft(true, dim=-1)))
 
-# 时频融合损失
+
 def MAE_Time_Frequency_torch(pred, true, mask_value=None):
     if mask_value != None:
         mask = torch.gt(true, mask_value)
@@ -159,9 +159,9 @@ def WMAPE_torch(pred, true, mask_value=None):
 
 
 def metric(pred, real):
-    print('pred.shape :', pred.shape)           # torch.Size([5256, 156, 3])
-    print('real.shape :', real.shape)           # torch.Size([5256, 156, 3])
-    mae = MAE_torch(pred, real, 0.0).item()    # 这里都做调整
+    print('pred.shape :', pred.shape)          
+    print('real.shape :', real.shape)          
+    mae = MAE_torch(pred, real, 0.0).item()    
     mape = MAPE_torch(pred, real, 0.0).item()
     wmape = WMAPE_torch(pred, real, 0.0).item()
     rmse = RMSE_torch(pred, real, 0.0).item()
