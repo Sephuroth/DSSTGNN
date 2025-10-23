@@ -17,3 +17,21 @@ We provide default training codes in `train.py`. You can train the model as foll
 python train.py
 ```
 For more parameter information, please refer to `train.py`. We provide a more detailed and complete command description for the training code:
+```
+python -u train.py
+ --device DEVICE
+ --data DATA
+ --input_dim INPUT_DIM
+ --channels CHANNELS
+ --num_nodes NUM_NODES
+ --input_len INPUT_LEN
+ --output_len OUTPUT_LEN
+ --batch_size BATCH_SIZE
+ --learning_rate LEARNING_RATE
+ --dropout DROPOUT
+ --weight_decay WEIGHT_DECAY
+ --epochs EPOCHS
+ --print_every PRINT_EVERY
+ --save SAVE
+ --es_patience ES_PATIENCE
+```
