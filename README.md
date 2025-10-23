@@ -13,6 +13,11 @@ This it the official github for "Navigating Spatio-Temporal Long-Short Heterogen
 
 ## Data Preparation
 The datasets can be download from [BaiduNetdisk](https://pan.baidu.com/s/14S3t5xu1Jzm338AJtopMhQ?pwd=8866).
+Also, you can generate the data by running the following code.
+```
+python generate_training_data.py
+```
+
 
 ## Usage
 ### Model Training
