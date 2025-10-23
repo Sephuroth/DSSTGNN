@@ -4,4 +4,9 @@ This it the official github for "Navigating Spatio-Temporal Long-Short Heterogen
 
 ## Requirements
 - python>=3.8
-- python>=3.8
+- torch>=2.0.0
+- numpy>=1.23.5
+- pandas>=1.5.3
+- scipy>=1.10.1
+- tables>=3.8.0
+- pywavelets>=1.4.1
