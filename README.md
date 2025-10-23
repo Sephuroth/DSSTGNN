@@ -13,3 +13,4 @@ This it the official github for "Navigating Spatio-Temporal Long-Short Heterogen
 
 ## Usage
 We provide default training codes in "train.py". You can train the model as follows:
+``` python train.py
