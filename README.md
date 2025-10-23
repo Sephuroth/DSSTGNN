@@ -12,6 +12,7 @@ This it the official github for "Navigating Spatio-Temporal Long-Short Heterogen
 - pywavelets>=1.4.1
 
 ## Usage
+### Model Training
 We provide default training codes in `train.py`. You can train the model as follows:
 ```
 python train.py
@@ -35,3 +36,11 @@ python -u train.py
  --save SAVE
  --es_patience ES_PATIENCE
 ```
+### Model Testing
+For the testing, you can run the code below:
+```
+python test.py
+```
+
+
+
