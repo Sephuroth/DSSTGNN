@@ -12,5 +12,8 @@ This it the official github for "Navigating Spatio-Temporal Long-Short Heterogen
 - pywavelets>=1.4.1
 
 ## Usage
-We provide default training codes in "train.py". You can train the model as follows:
-``` python train.py
+We provide default training codes in `train.py`. You can train the model as follows:
+```
+python train.py
+```
+For more parameter information, please refer to `train.py`. We provide a more detailed and complete command description for the training code:
