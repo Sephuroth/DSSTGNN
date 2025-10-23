@@ -11,6 +11,9 @@ This it the official github for "Navigating Spatio-Temporal Long-Short Heterogen
 - tables>=3.8.0
 - pywavelets>=1.4.1
 
+## Data Preparation
+The datasets can be download from [BaiduNetdisk](https://pan.baidu.com/s/14S3t5xu1Jzm338AJtopMhQ?pwd=8866).
+
 ## Usage
 ### Model Training
 We provide default training codes in `train.py`. You can train the model as follows:
