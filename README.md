@@ -10,3 +10,6 @@ This it the official github for "Navigating Spatio-Temporal Long-Short Heterogen
 - scipy>=1.10.1
 - tables>=3.8.0
 - pywavelets>=1.4.1
+
+## Usage
+We provide default training codes in run.py. You can train the model as follows:
