@@ -12,7 +12,7 @@ This it the official github for "Navigating Spatio-Temporal Long-Short Heterogen
 - pywavelets>=1.4.1
 
 ## Data Preparation
-The datasets can be download from [BaiduNetdisk](https://pan.baidu.com/s/14S3t5xu1Jzm338AJtopMhQ?pwd=8866).
+The datasets can be download from [BaiduNetdisk](https://pan.baidu.com/s/14S3t5xu1Jzm338AJtopMhQ?pwd=8866) or [GoogleDrive](https://drive.google.com/drive/folders/1qSESYIfs2UQdqdIXh22scVxBbcrxvzby?usp=sharing).
 Also, you can generate the data by running the following code.
 ```
 python generate_training_data.py
