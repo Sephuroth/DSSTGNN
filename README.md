@@ -48,3 +48,10 @@ For the testing, you can run the code below:
 ```
 python test.py
 ```
+
+## License
+
+- Code: MIT License
+- Data: CC BY 4.0 License
+
+The dataset used in this study is publicly available and can be freely used under the CC BY 4.0 license.
