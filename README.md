@@ -10,6 +10,11 @@ This it the official github for "DSSTGNN"
 - tables>=3.8.0
 - pywavelets>=1.4.1
 
+## Data Availability
+It is publicly available at:
+[Zenodo](https://doi.org/10.5281/zenodo.19491783).
+
+
 ## Data Preparation
 The METEO-SC dataset can be download from [BaiduNetdisk](https://pan.baidu.com/s/14S3t5xu1Jzm338AJtopMhQ?pwd=8866) or [GoogleDrive](https://drive.google.com/drive/folders/1qSESYIfs2UQdqdIXh22scVxBbcrxvzby?usp=sharing).
 And the METEO-NUS dataset is from [WEATHER-5K](https://github.com/taohan10200/WEATHER-5K). Also, you can generate the data by running the following code.
